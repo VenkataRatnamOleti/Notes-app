@@ -19,7 +19,7 @@ async function startServer() {
     console.log('Pinged your deployment. You successfully connected to MongoDB!');
     app.use('/api/notes', require('./routes/notes'));
     const PORT = process.env.PORT || 5000;
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+   	module.exports = app;
   } catch (err) {
     console.error('Failed to connect to MongoDB:', err);
     process.exit(1);
