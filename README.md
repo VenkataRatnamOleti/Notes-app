@@ -1,3 +1,63 @@
+# Note Assist
+
+A full-stack Notes App built with React (frontend) and Node.js/Express (backend), using MongoDB for persistent storage.
+
+## Features
+- Create, edit, and delete notes
+- Responsive and modern UI
+- Notes stored securely in MongoDB
+- RESTful API backend
+- Environment variable support for sensitive data
+
+## Technologies Used
+- Frontend: React, Material-UI (MUI)
+- Backend: Node.js, Express, Mongoose
+- Database: MongoDB Atlas
+
+## Getting Started
+
+### Prerequisites
+- Node.js and npm installed
+- MongoDB Atlas account (or local MongoDB)
+
+### Installation
+
+1. **Clone the repository:**
+	```sh
+	git clone <your-repo-url>
+	cd "Notes app"
+	```
+
+2. **Backend setup:**
+	```sh
+	cd backend
+	npm install
+	# Create a .env file with your MongoDB URI
+	echo MONGODB_URI=your_mongodb_uri > .env
+	npm start
+	```
+
+3. **Frontend setup:**
+	```sh
+	cd ../frontend
+	npm install
+	npm start
+	```
+
+4. **Open the app:**
+	- Frontend: http://localhost:3000
+	- Backend API: http://localhost:5000/api/notes
+
+## Deployment
+- Set the `MONGODB_URI` environment variable on your server or cloud platform.
+- Do not commit your `.env` file to version control.
+
+## Security
+- MongoDB credentials are stored in a `.env` file and loaded using `dotenv`.
+- `.env` is included in `.gitignore` by default.
+
+## License
+MIT
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
