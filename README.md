@@ -20,7 +20,7 @@ Try it out here 👉 [https://notes-app-beryl-mu.vercel.app/](https://notes-app-
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/note-assist.git
+git clone https://github.com/VenkataRatnamOleti/note-assist.git
 cd note-assist
 npm install
 ```
